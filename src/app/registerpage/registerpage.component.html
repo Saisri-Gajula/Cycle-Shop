@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+ 
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+
+</head>
+
+ 
+
+<body>
+
+    <div class="register-container">
+
+        <h3><b>Hey!
+
+             Register Here</b></h3>
+
+        <!-- <p>Please enter your personal data!</p> -->
+
+        <form (ngSubmit)="onSubmit()">
+
+            <div>
+
+                <label for="username">Username:</label>
+
+                <input type="text" id="username" name="username" [(ngModel)]="username" required>
+
+            </div>
+
+            <div class="form-group">
+
+                <label for="password">Password:</label>
+
+                <input type="password" id="password" name="password" [(ngModel)]="userpassword" required>
+
+            </div>
+
+            <div class="form-group">
+
+                <label for="confirmPassword">Confirm Password:</label>
+
+                <input type="password" id="confirmPassword" name="confirmPassword" [(ngModel)]="confirmPassword"
+
+                    required>
+
+            </div>
+
+            <button type="submit">Submit</button>
+
+        </form>
+
+    </div>
+
+ 
+
+</body>
+
+ 
+
+</html>

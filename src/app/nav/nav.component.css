@@ -1,0 +1,39 @@
+/* Style for the navigation bar */
+.navbar {
+    background-color: #333; /* Background color */
+    overflow: hidden;
+  }
+  
+  /* Style for the navigation buttons */
+  .nav-button {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 16px;
+  }
+  
+  /* Change the color of the buttons when hovered */
+  .nav-button:hover {
+    background-color: #555;
+  }
+  
+  /* Style for the back button */
+  .nav-button:last-child {
+    background-color: white; /* Red color for the back button */
+  }
+  
+  /* Change the color of the back button when hovered */
+  .nav-button:last-child:hover {
+    background-color: white; /* Darker red on hover */
+  }
+  
+  /* Clear floats after the navigation bar */
+  .navbar:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  

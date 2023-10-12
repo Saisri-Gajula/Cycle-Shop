@@ -1,0 +1,81 @@
+/* Common styles for both sections */
+.container1,
+.container2 {
+  margin: 50px auto; /* Center horizontally */
+  padding: 20px;
+  background-color: hwb(0 55% 18%);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  display: inline-block; /* Display them side by side */
+  vertical-align: top; /* Align them at the top */
+  margin-bottom: 20px; /* Add vertical space between containers */
+}
+
+h2 {
+  color: hsl(210, 2%, 17%);
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid #000; /* Add black borders to th and td elements */
+}
+
+/* Styles for the main container */
+.container {
+  display: flex;
+  flex-direction: row; /* Arrange sections horizontally */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  width: 100%;
+}
+
+/* Styles for the Administrator Panel section */
+.container2 {
+  width: 35%; /* Adjust the width as needed */
+  margin-right: 50px;
+  margin-left: 175px;
+}
+
+/* Styles for the Add New Cycle section */
+.container1 {
+  width: 35%; /* Adjust the width as needed */
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="number"] {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+button[type="submit"] {
+  background-color: hsl(211, 29%, 51%);
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: hwb(0 55% 18%);
+}

@@ -1,0 +1,61 @@
+<div>
+  <ul *ngIf="showCycleList">
+
+      <table>
+  
+        <thead>
+  
+          <tr>
+  
+            <th>Id</th>
+  
+            <th>Brand</th>
+  
+           <th>Price</th>
+  
+            <th>Available</th>
+  
+           <th>cartQuantity</th>
+
+           <th>Add to cart</th>
+  
+           <th>Remove from cart</th>
+          </tr>
+  
+        </thead>
+  
+        <tbody>
+  
+          <tr *ngFor="let cycle of cycles">
+  
+            <td>{{cycle.cycleId}}</td>
+  
+            <td>{{ cycle.cycleName}}</td>
+  
+            <td>{{cycle.price}}</td>
+  
+            <td>{{ cycle.stock }}</td>
+
+            <td>{{ cycle.cartQuantity }}</td>
+  
+            <td>  <button (click)="addToCart(cycle)">Add to Cart</button>
+
+            </td>
+
+           <td> <button (click)="removeFromCart(cycle)">Remove from Cart</button>
+           </td>
+          </tr>
+  
+        </tbody>
+  
+      </table>
+  
+     
+  
+   
+  
+    </ul>
+  
+   
+  
+  </div>

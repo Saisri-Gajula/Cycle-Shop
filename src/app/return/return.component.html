@@ -1,0 +1,40 @@
+<!-- Data display section -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cycle Shop</title>
+</head>
+<body>
+<table *ngIf="showData">
+  <thead>
+    <tr>
+      <th>Cycle Name</th>
+      <th>Price</th>
+      <th>Cart</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of newData">
+      <ng-container *ngIf="item.cartQuantity > 0">
+        <td>{{ item.cycleName }}</td>
+        <td>{{ item.price }}</td>
+        <td>{{ item.cartQuantity }}</td>
+      </ng-container>
+    </tr>
+  </tbody>
+</table>
+ <!-- Cart display section -->
+ <button (click)="checkout()">Checkout</button>
+ <div *ngIf="checkoutResponse">
+   <h2>Checkout Information</h2>
+   <p>ThankYou, Checkout successful! Total cost: {{ans}}</p>
+
+ </div>
+
+ <button (click)="checkDataVisibility()">Exit</button>
+
+ 
+</body>
+</html>

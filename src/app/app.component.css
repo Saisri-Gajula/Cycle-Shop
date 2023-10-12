@@ -1,0 +1,72 @@
+/* Style for the navigation bar */
+.navbar {
+  background-color: #333; /* Background color */
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+/* Style for the navigation buttons */
+.nav-button {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 0 10px;
+  /* transition: background-color 0.3s ease; */
+}
+
+/* Change the color of the buttons when hovered */
+.nav-button:hover {
+  background-color: hsl(211, 29%, 51%);
+  border-radius: 5px; /* Add rounded corners on hover */
+}
+
+/* Style for the back button */
+/* .nav-button:last-child {
+  background-color: b; /* Red color for the back button */
+ */
+
+/* Change the color of the back button when hovered */
+/* .nav-button:last-child:hover {
+  background-color: white; /* Darker red on hover */
+ */
+
+/* Clear floats after the navigation bar */
+.navbar:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+a:link {
+  color: green;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:visited {
+  color: pink;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {
+  color: hsl(211, 29%, 51%);
+  background-color: transparent;
+  text-decoration: underline;
+}
+a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+img {
+
+  max-width: 5%; /* Ensure the image doesn't exceed its container width */
+
+  height: 15%; /* Maintain the image's aspect ratio */
+
+  margin-bottom: 10px; /* Add some space below the image */
+
+}
